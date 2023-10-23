@@ -44,7 +44,7 @@ let info =
         either the parsetree or an error message for each."
   ]
   in
-  Cmd.info "pg_check" 
+  Cmd.info "pg_check"
     ~version:"0.9.6"
     ~doc
     ~exits:Cmd.[
@@ -55,7 +55,7 @@ let info =
     ]
     ~man
 
-let files = 
+let files =
   let doc = "A list of files to parse. If no files are provided, reads from stdin." in
   Arg.(value & pos_all non_dir_file ["-"] & info [] ~docv:"FILE(S)" ~doc)
 
