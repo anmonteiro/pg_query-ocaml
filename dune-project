@@ -1,4 +1,4 @@
-(lang dune 2.0)
+(lang dune 2.6)
 
 (name pg_query)
 
@@ -26,8 +26,6 @@
  (depends
   (ocaml
    (>= 4.07))
-  (dune
-   (>= 2.0))
   cmdliner
   ctypes
   ctypes-foreign

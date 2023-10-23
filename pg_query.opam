@@ -11,8 +11,8 @@ homepage: "https://github.com/roddyyaga/pg_query-ocaml"
 doc: "https://roddyyaga.github.io/pg_query-ocaml/pg_query-ocaml/index.html"
 bug-reports: "https://github.com/roddyyaga/pg_query-ocaml/issues"
 depends: [
+  "dune" {>= "2.6"}
   "ocaml" {>= "4.07"}
-  "dune" {>= "2.0"}
   "cmdliner"
   "ctypes"
   "ctypes-foreign"

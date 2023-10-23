@@ -1,9 +1,16 @@
+(data_only_dirs libpg_query)
+
 (rule
  (deps
   (source_tree libpg_query))
  (targets libpg_query.a)
  (action
-  (copy libpg_query/libpg_query.a libpg_query.a)))
+  (no-infer
+   (progn
+    (chdir
+     libpg_query
+     (run %{make} build))
+    (copy libpg_query/libpg_query.a libpg_query.a)))))
 
 (library
  (name pg_query)
