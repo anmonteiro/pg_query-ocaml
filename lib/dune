@@ -16,7 +16,7 @@
  (name pg_query)
  (public_name pg_query)
  (modes native)
- (libraries ctypes ctypes.foreign)
+ (libraries ctypes ctypes-foreign)
  (preprocess
   (pps ppx_deriving.show))
  (foreign_archives pg_query))
